@@ -14,6 +14,7 @@
 		721FAA4C21FCDA09007845B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 721FAA4A21FCDA09007845B8 /* LaunchScreen.storyboard */; };
 		721FAA5721FCDA0A007845B8 /* Multi_Tip_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721FAA5621FCDA0A007845B8 /* Multi_Tip_CalculatorTests.swift */; };
 		721FAA6221FCDA0A007845B8 /* Multi_Tip_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721FAA6121FCDA0A007845B8 /* Multi_Tip_CalculatorUITests.swift */; };
+		72EF3A6821FEBAD800B5A5F8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EF3A6721FEBAD800B5A5F8 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		721FAA5D21FCDA0A007845B8 /* Multi Tip CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Multi Tip CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		721FAA6121FCDA0A007845B8 /* Multi_Tip_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Multi_Tip_CalculatorUITests.swift; sourceTree = "<group>"; };
 		721FAA6321FCDA0A007845B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72EF3A6721FEBAD800B5A5F8 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				721FAA4121FCDA09007845B8 /* AppDelegate.swift */,
 				721FAA4321FCDA09007845B8 /* ViewController.swift */,
 				721FAA4521FCDA09007845B8 /* Main.storyboard */,
+				72EF3A6721FEBAD800B5A5F8 /* SettingsViewController.swift */,
 				721FAA4821FCDA09007845B8 /* Assets.xcassets */,
 				721FAA4A21FCDA09007845B8 /* LaunchScreen.storyboard */,
 				721FAA4D21FCDA09007845B8 /* Info.plist */,
@@ -261,6 +264,7 @@
 			files = (
 				721FAA4421FCDA09007845B8 /* ViewController.swift in Sources */,
 				721FAA4221FCDA09007845B8 /* AppDelegate.swift in Sources */,
+				72EF3A6821FEBAD800B5A5F8 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
