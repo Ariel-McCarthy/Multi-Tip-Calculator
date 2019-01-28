@@ -21,6 +21,13 @@ class SettingsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    //initialize:
+    // weak var firstResponder: NSResponder? { get }
+    
+    //then use one of these:
+    // var initialFirstResponder: NSView?
+    // func makeFirstResponder(NSResponder?) -> Bool
+    
 
     /*
     // MARK: - Navigation

@@ -15,6 +15,8 @@ class ViewController: UIViewController
     
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var totalLabel: UILabel!
+    
+    
 
     @IBOutlet weak var tipControl: UISegmentedControl!
     

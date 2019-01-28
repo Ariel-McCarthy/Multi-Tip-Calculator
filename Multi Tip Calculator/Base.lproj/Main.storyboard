@@ -28,11 +28,13 @@
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="right" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c27-hX-rW7">
                                 <rect key="frame" x="234" y="83" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
                                     <action selector="CalculateTip:" destination="BYZ-38-t0r" eventType="editingChanged" id="4FQ-ww-QtN"/>
+                                    <outletCollection property="gestureRecognizers" destination="ry3-WP-qzV" appends="YES" id="BBw-eH-ctL"/>
                                 </connections>
                             </textField>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="srV-X6-NkA">
@@ -82,12 +84,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tip.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ObD-NE-HyN">
+                                <rect key="frame" x="67" y="448" width="240" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="8I2-wp-Gsw" appends="YES" id="3R2-hL-xxp"/>
+                            <outletCollection property="gestureRecognizers" destination="eVf-6o-ifY" appends="YES" id="QjZ-mW-lBp"/>
+                            <outletCollection property="gestureRecognizers" destination="9el-Ha-Cpz" appends="YES" id="u9b-oW-VQd"/>
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Tip Calculator" id="fop-eo-FUU">
@@ -110,6 +118,9 @@
                         <action selector="OnTap:" destination="BYZ-38-t0r" id="uMP-D6-KU1"/>
                     </connections>
                 </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="eVf-6o-ifY"/>
+                <rotationGestureRecognizer id="9el-Ha-Cpz"/>
+                <tapGestureRecognizer id="ry3-WP-qzV"/>
             </objects>
             <point key="canvasLocation" x="591.20000000000005" y="134.48275862068968"/>
         </scene>
@@ -132,9 +143,13 @@
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Cr-O4-GH3">
                                 <rect key="frame" x="139" y="275" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="xH2-Gt-9aL" appends="YES" id="qos-Td-pjr"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sws-wd-FZL">
                                 <rect key="frame" x="244" y="280" width="42" height="21"/>
@@ -143,12 +158,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tip2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="LlY-cI-AUR">
+                                <rect key="frame" x="67" y="443" width="240" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="WUr-jn-wNX"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="hun-Xi-f0M" appends="YES" id="1QG-bo-jTD"/>
+                            <outletCollection property="gestureRecognizers" destination="998-51-MaX" appends="YES" id="YAG-N2-5MM"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FHQ-6F-TSK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="hun-Xi-f0M"/>
+                <rotationGestureRecognizer id="998-51-MaX"/>
+                <tapGestureRecognizer id="xH2-Gt-9aL"/>
             </objects>
             <point key="canvasLocation" x="1285.5999999999999" y="136.28185907046478"/>
         </scene>
@@ -171,4 +198,8 @@
             <point key="canvasLocation" x="-97" y="134"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="tip.jpg" width="600" height="600"/>
+        <image name="tip2.jpg" width="640" height="480"/>
+    </resources>
 </document>
