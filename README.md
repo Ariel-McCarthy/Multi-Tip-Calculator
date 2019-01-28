@@ -6,7 +6,7 @@
 
 Submitted by: **Sovreign-Ariel S. McCarthy**
 
-Time spent: **5** hours spent in total
+Time spent: **15** hours spent in total
 
 ## User Stories
 
@@ -15,15 +15,18 @@ The following **required** functionality is complete:
 * [X] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
 
 The following **optional** features are implemented:
-* [ ] Settings page to change the default tip percentage.
-* [ ] UI animations
+* [.5] Settings page to change the default tip percentage (almost).
+* [X] UI animations
 * [ ] Remembering the bill amount across app restarts (if <10mins)
 * [ ] Using locale-specific currency and currency thousands separators.
-* [ ] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
+* [.5] Making sure the keyboard is always visible (settings screen only) and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
 
 The following **additional** features are implemented:
 
-- [X] Visible text box to make it more obvious where to input the bill amount.
+- [X] Bordered text boxes to make it more obvious where to input the bill amount.
+- [X] Screen Rotation.
+- [X] Colored background.
+- [X] Added image views.
 
 ## Video Walkthrough 
 
@@ -35,8 +38,9 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-The navigation controller was not available through the button created for things of that sort, when I searched for a shortcut key I couldn't find one. But, I was eventually guided to find it through the dropdowns.
+The navigation controller was not available through the button created for things of that sort, when I searched for a shortcut key I couldn't find one. But, I was eventually guided to find it through the dropdowns, then even later saw it was in the written documentation.
 
+I initially created a picker view for the user to decide upon a percentage in the settings page, however, I later realized that time didn't permit.
 
 ## License
 
