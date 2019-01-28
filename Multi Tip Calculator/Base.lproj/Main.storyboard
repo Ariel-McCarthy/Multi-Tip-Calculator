@@ -146,7 +146,7 @@
                                 <gestureRecognizers/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="xH2-Gt-9aL" appends="YES" id="qos-Td-pjr"/>
                                 </connections>
