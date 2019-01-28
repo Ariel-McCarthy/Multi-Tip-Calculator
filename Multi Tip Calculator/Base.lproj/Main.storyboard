@@ -90,7 +90,13 @@
                             <outletCollection property="gestureRecognizers" destination="8I2-wp-Gsw" appends="YES" id="3R2-hL-xxp"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Tip Calculator" id="fop-eo-FUU"/>
+                    <navigationItem key="navigationItem" title="Tip Calculator" id="fop-eo-FUU">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="M4Y-Ct-CTK">
+                            <connections>
+                                <segue destination="hZN-1x-0Jm" kind="show" id="soU-KC-O3r"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="billField" destination="c27-hX-rW7" id="P3T-03-D0s"/>
                         <outlet property="tipControl" destination="qJ3-rf-NHj" id="0LH-BF-Ge7"/>
@@ -106,6 +112,45 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="591.20000000000005" y="134.48275862068968"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="i00-1C-jSY">
+            <objects>
+                <viewController title="Settings" id="hZN-1x-0Jm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gf6-0r-QHx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter a custom percentage between 0 and 100" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDH-sP-uRd">
+                                <rect key="frame" x="51" y="151" width="272" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Cr-O4-GH3">
+                                <rect key="frame" x="139" y="275" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sws-wd-FZL">
+                                <rect key="frame" x="244" y="280" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="WUr-jn-wNX"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FHQ-6F-TSK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1285.5999999999999" y="136.28185907046478"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PQ8-8v-5ac">
